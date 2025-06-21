@@ -1,3 +1,21 @@
+/*    */
+@font-face {
+    font-family: "Plain Light";
+    src: url(./plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: "Plain Light";
+    src: url(./plain-light-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif";
+    src: url(./silkserif-regularitalic-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif";
+    src: url(./silkserif-lightitalic-webfont.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +26,16 @@
 html, body{
     height: 100%;
     width: 100%;
+}
+.crsrc{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: 2px solid #b8b8b8;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
 }
 .loader{
     height: 100%;
@@ -97,4 +125,60 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color:#030303;
+}
+.page1 .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+.nav-part2{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.nav-part2 h4{
+    font-size: .8vw;
+    font-weight: 500;
+}
+.hero{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 27%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    /* background-color: rebeccapurple; */
+    overflow: hidden;
+    z-index: 9999;
+}
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+.hero h1{
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+    /* font-family: 'silk serif'; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero h2{
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+    /* font-family: 'silk serif'; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero h3{
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+    /* font-family: 'silk serif'; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
 }
